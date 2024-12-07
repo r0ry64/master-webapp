@@ -186,3 +186,58 @@ html {
 .featured-item:hover {
     box-shadow: 0px 4px 8px black;
 }
+
+.settings {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid var(--primary-color);
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    background-color: var(--card-bg-color);
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+.settings h2 {
+    font-size: 24px;
+    text-align: center;
+    color: black;
+    margin-bottom: 20px;
+}
+
+.settings label {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 18px;
+    color: var(--text-color);
+    margin-top: 15px;
+    padding: 10px;
+    border: 1px solid var(--primary-color);
+    border-radius: var(--border-radius);
+    background-color: var(--background-color);
+    cursor: pointer;
+    transition: background-color var(--transition-speed);
+}
+
+.settings label:hover {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.settings input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+body.dark .settings label {
+    background-color: black;
+    color: white;
+    border-color: black;
+}
+
+body.dark .settings input[type="checkbox"] {
+    accent-color: white;
+}

@@ -138,3 +138,7 @@ footer {
     bottom: 0;
     width: 100%;
 }
+
+html {
+    scroll-behavior: smooth;
+}

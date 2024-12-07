@@ -1,4 +1,4 @@
 function renderHome(container) {
     container.innerHTML = `<h1>Welcome to the Home Page!!</h1>`;
-    container.innerHTML = `<p>This is the homepage, I dont know what else to put here lol.</p>`;
+    container.innerHTML = `<p>This is my attempt at a master level web application! </p>`;
 }

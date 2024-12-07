@@ -119,3 +119,11 @@ input:focus, select:focus, textarea:focus {
     border-color: var(--primary-color);
     outline: none;
 }
+
+body.dark input,
+body.dark select,
+body.dark textarea {
+    background-color: black;
+    color: white;
+    border: 1px solid darkred;
+}

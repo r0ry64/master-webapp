@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rory's Webpage</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul id="navbar">
+                <li><a href="#" data-page="home">Home</a></li>
+                <li><a href="#" data-page="weather">Weather</a></li>
+                <li><a href="#" data-page="tasks">Tasks</a></li>
+                <li><a href="#" data-page="settings">Settings</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="app">
+        <!-- Dynamic content will be loaded here -->
+    </main>
+
+    <footer>
+        <p>&copy; Edgar Rory Cobb, 2024</p>
+    </footer>
+
+    <!-- Add scripts directly here -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="home.js"></script>
+    <script src="weather.js"></script>
+    <script src="tasks.js"></script>
+    <script src="settings.js"></script>
+    <script src="app.js"></script>  <!-- This will load last -->
+</body>
+</html>

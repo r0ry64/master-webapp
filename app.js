@@ -1,11 +1,6 @@
-// app.js
-console.log('app.js loaded');
-
-// Define router and page rendering functions directly here
-
 function router(page) {
     const appContainer = document.getElementById('app');
-    appContainer.innerHTML = ''; // Clear existing content
+    appContainer.innerHTML = '';
     localStorage.setItem('lastPage', page);
     switch (page) {
         case 'home':
@@ -25,7 +20,6 @@ function router(page) {
     }
 }
 
-// Event listener for navigation
 const navbar = document.getElementById('navbar');
 navbar.addEventListener('click', (e) => {
     if (e.target.tagName === 'A') {
@@ -35,6 +29,5 @@ navbar.addEventListener('click', (e) => {
     }
 });
 
-// Initialize with the last visited page or default to home
 const lastPage = localStorage.getItem('lastPage') || 'home';
 router(lastPage);

@@ -73,7 +73,7 @@ header {
 }
 
 .card:hover {
-    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 6px 10px black;
     transform: translateY(-5px);
 }
 
@@ -136,7 +136,7 @@ footer {
     font-size: 14px;
     position: relative;
     bottom: 0;
-    width: 100%;
+    width: 97%;
 }
 
 html {
@@ -165,4 +165,24 @@ html {
     .flex-item {
         flex: 1 1 100%;
     }
+}
+
+.featured-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.featured-item {
+    background-color: var(--card-bg-color);
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    transition: box-shadow var(--transition-speed);
+}
+
+.featured-item:hover {
+    box-shadow: 0px 4px 8px black;
 }
